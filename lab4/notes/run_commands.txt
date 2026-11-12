@@ -1,0 +1,18 @@
+Requirements: Python 3.12+; pip install -r requirements.txt from repository root.
+Copy .env.example to .env and set GEMINI_API_KEY for online runs.
+From lab4/python:
+  python -m pytest -q
+  python exp1_knowledge.py
+  python exp2_budget.py
+  python exp2_budget.py --code
+  python exp3_interview.py --simulate
+  python exp3_interview.py --simulate --strict
+  python exp4_day.py
+  python exp5_tools.py --runs 3
+  python exp5_tools.py loop 3 --sum --runs 3
+  python homework_a_vouchers.py 4 9 10 13
+  python homework_a_vouchers.py 1 5 5 5
+  python homework_b_failed_test.py 5
+The class tables are completed with actual API responses. Offline tests don't require a Gemini key.
+Homework B only uses a subprocess and timeout; it is NOT a fully isolated security sandbox.
+Run generated code only inside a disposable VM/container with no sensitive secrets.
